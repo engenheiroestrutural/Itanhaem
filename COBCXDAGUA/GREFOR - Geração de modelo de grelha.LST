@@ -1,0 +1,99 @@
+
+------------------------------------------------------------------------------
+                     GREFOR - Geração do modelo de grelha
+12/06/2021 13:23:28 C:\TQS\022-Itanhaem8\COBCXDAGUA
+------------------------------------------------------------------------------
+
+Critérios carregados........... C:\TQS\022-Itanhaem8\CRITGRE.DAT
+Arquivo de carregamentos....... CARRGRE.DAT
+
+
+FCK definido no edifício
+=========================
+Valor =     300.00 kgf/cm2
+
+
+Critérios gerais
+=================
+
+Redutor de inércia a torção do comando TORÇÃO ...       1.00         ( REDTOR)
+Inércia de calculo das vigas .................... Seção T             
+FCK do concreto, kgf/cm2 ........................     300.00         ( FCK   )
+Fator VEC p/cálculo de E em função do FCK .......   13900.00         ( VEC   )
+Módulo de elasticidade longitudinal .............  .2684E+07         ( ELALON)
+Módulo de elasticidade transversal ..............  .1118E+07         ( ELATRA)
+Peso específico do concreto .....................       2.50         ( DESCON)
+Coeficiente de poisson ..........................        .20         ( POISSO)
+Redutor de mola XY para pilares elásticos .......       4.00         ( REDMOL)
+Pé direito do piso inferior......................       2.05
+Pé direito do piso superior......................       0.00
+Redutor de mola Z  para pilares elásticos .......       1.00         ( REDMOZ)
+Multip. da largura equiv de pilares elásticos ...       1.00         ( LEPMOL)
+Fator de engastamento parcial das vigas .........       1.00         ( ENGVIG)
+Condição de apoio padrão ........................ Elástico Independente    
+Numero de carregamentos verticais ...............          4
+Numero de combinações ...........................          5
+Envoltória definida .............................        Sim
+
+Apoios elásticos independentes
+==============================
+P8    P9    P11   P12   
+
+Viga  501 apoio sobre pilar    9 Leqv   .140 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .37251E+03         KRY .41912E+02
+Viga  502 apoio sobre pilar   11 Leqv   .140 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .37251E+03         KRY .41912E+02
+Viga  502 apoio sobre pilar   12 Leqv   .140 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .37251E+03         KRY .41912E+02
+Viga  503 apoio sobre pilar   11 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .86817E+02         KRY .37251E+03
+Viga  503 apoio sobre pilar    8 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .86817E+02         KRY .37251E+03
+Viga  504 apoio sobre pilar   12 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .86817E+02         KRY .37251E+03
+Viga  504 apoio sobre pilar    9 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .86817E+02         KRY .37251E+03
+
+
+
+Modelo da forma:
+
+Nós ...................................   15
+Vigas .................................    4
+Pilares ...............................    4
+Lajes .................................    0
+
+Modelo da grelha:
+
+Nós ...................................   13
+Materiais .............................    2
+Seções ................................    3
+Barras ................................    7
+Restrições ............................   10
+
+Caso de carregamento ..................    1
+===>>> Todas permanentes e acidentais dos pavimentos                           
+Carregamentos nas barras ..............    9
+Somatória de cargas verticais.(barras).      1.94 tf (só vigas)
+
+Caso de carregamento ..................    2
+===>>> Peso Próprio                                                            
+Carregamentos nas barras ..............    5
+Somatória de cargas verticais.(barras).      0.53 tf (só vigas)
+
+Caso de carregamento ..................    3
+===>>> Cargas permanentes                                                      
+Carregamentos nas barras ..............    4
+Somatória de cargas verticais.(barras).      1.06 tf (só vigas)
+
+Caso de carregamento ..................    4
+===>>> Cargas acidentais                                                       
+Carregamentos nas barras ..............    4
+Somatória de cargas verticais.(barras).      0.35 tf (só vigas)
+
+Largura de banda original .............    7
+Largura de banda reduzida .............    2
+
+
+
+AVISO: nervuras não processadas no projeto    7 

@@ -1,0 +1,89 @@
+
+------------------------------------------------------------------------------
+                     GREFOR - Geração do modelo de grelha
+12/06/2021 13:23:52 C:\TQS\022-Itanhaem8\Fundacao
+------------------------------------------------------------------------------
+
+Critérios carregados........... C:\TQS\022-Itanhaem8\CRITGRE.DAT
+Arquivo de carregamentos....... CARRGRE.DAT
+
+
+FCK definido no edifício
+=========================
+Valor =     300.00 kgf/cm2
+
+
+Critérios gerais
+=================
+
+Redutor de inércia a torção do comando TORÇÃO ...       1.00         ( REDTOR)
+Inércia de calculo das vigas .................... Seção T             
+FCK do concreto, kgf/cm2 ........................     300.00         ( FCK   )
+Fator VEC p/cálculo de E em função do FCK .......   13900.00         ( VEC   )
+Módulo de elasticidade longitudinal .............  .2684E+07         ( ELALON)
+Módulo de elasticidade transversal ..............  .1118E+07         ( ELATRA)
+Peso específico do concreto .....................       2.50         ( DESCON)
+Coeficiente de poisson ..........................        .20         ( POISSO)
+Redutor de mola XY para pilares elásticos .......       4.00         ( REDMOL)
+
+***001 AVISO: Pé direito zero no piso    0, adotado    1.00m
+
+Pé direito do piso ..............................       1.00
+Redutor de mola Z  para pilares elásticos .......       1.00         ( REDMOZ)
+Multip. da largura equiv de pilares elásticos ...       1.00         ( LEPMOL)
+Fator de engastamento parcial das vigas .........       1.00         ( ENGVIG)
+Condição de apoio padrão ........................ Elástico Independente    
+Numero de carregamentos verticais ...............          4
+Numero de combinações ...........................          5
+Envoltória definida .............................        Sim
+
+Apoios elásticos independentes
+==============================
+P1    P2    P3    P4    P5    P6    P7    P8    P9    P10   P11   P12   P13   
+P14   P15   P18   P19   P20   P21   P22   P23   P24   P25   P26   P27   P28   
+P29   P30   
+
+
+
+
+Modelo da forma:
+
+Nós ...................................   28
+Vigas .................................    0
+Pilares ...............................   28
+Lajes .................................    0
+
+Modelo da grelha:
+
+Nós ...................................   28
+Materiais .............................    2
+Seções ................................    2
+Barras ................................    0
+Restrições ............................   28
+
+Caso de carregamento ..................    1
+===>>> Todas permanentes e acidentais dos pavimentos                           
+Forças nos nós ........................    1
+Somatória de cargas verticais.(barras).      0.00 tf (só vigas)
+
+Caso de carregamento ..................    2
+===>>> Peso Próprio                                                            
+Forças nos nós ........................    1
+Somatória de cargas verticais.(barras).      0.00 tf (só vigas)
+
+Caso de carregamento ..................    3
+===>>> Cargas permanentes                                                      
+Forças nos nós ........................    1
+Somatória de cargas verticais.(barras).      0.00 tf (só vigas)
+
+Caso de carregamento ..................    4
+===>>> Cargas acidentais                                                       
+Forças nos nós ........................    1
+Somatória de cargas verticais.(barras).      0.00 tf (só vigas)
+
+Largura de banda original .............    0
+Largura de banda reduzida .............    0
+
+
+
+AVISO: nervuras não processadas no projeto    2 

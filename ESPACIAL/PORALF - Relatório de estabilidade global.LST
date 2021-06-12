@@ -1,0 +1,252 @@
+
+ ------------------------------------------------------------------------------
+            Cálculo dos parâmetros de estabilidade global do pórtico
+     T  Q  S           N  G  E      V19.16.3    12/06/21 13:25:41
+ C:\TQS\022-Itanhaem8\ESPACIAL
+ JONAS BENEDETT DORR                     
+ RUA CEL. VICENTE, 2621                  
+ ------------------------------------------------------------------------------
+
+ Projeto    1
+ Pórtico 'Residência Luana e Vitor'
+         'Luana e Vitor'
+
+Informações de cálculo
+======================
+    Caso de carga vertical ...........................          1
+    ==>> 'Todas permanentes e acidentais dos pavimentos'
+    Caso vertical tem carga acidental reduzida .......           Não
+
+    Majorador de cargas verticais   GamaF/GamaF3......          1.27
+    Majorador de cargas horizontais GamaF/GamaF3......          1.27
+    Coeficiente de não linearidade física ............          1.00
+    Módulo de elasticidade (CONCR)....................    2952000.00
+    Tipo de módulo de elasticidade usado .............      Secante+10%     
+    Correção no GamaZ para transferência de esforços..          0.95
+    Norma para cálculo de imperfeições globais .......         NBR-6118:2014   
+    1/Ângulo mínimo p/desaprumo preponderante ........        300.00
+    Número de prumadas p/cálculo de Teta1 ............          1
+    Considerar deslocamento horiz das cargas verticais           Sim
+    Fator de redução dos desloc horiz por peso próprio          0.50
+    Fator de redução dos desloc horiz por carga perm..          0.75
+    Coeficiente p/classificar estrutura deslocável ...          FAVt
+    Valor de referência de estrutura deslocável.......          1.10
+    Valor de referência de Alfa ......................          0.60
+    Número mínimo de pisos no edifício p/aplicar GamaZ          4
+    Cota final .......................................         11.10
+    Cota inicial .....................................          0.00
+
+Casos de carregamento horizontal
+================================
+Caso  Prefixo  Título
+   5  VENT1    Vento (1) 90°
+   6  VENT2    Vento (2) 270°
+   7  VENT3    Vento (3) 0°
+   8  VENT4    Vento (4) 180°
+
+Combinações de ELU para vigas e lajes
+=====================================
+Caso  Prefixo  Título
+  14           ELU1/ACIDCOMB/PP+PERM+ACID+0.6VENT1
+  15           ELU1/ACIDCOMB/PP+PERM+ACID+0.6VENT2
+  16           ELU1/ACIDCOMB/PP+PERM+ACID+0.6VENT3
+  17           ELU1/ACIDCOMB/PP+PERM+ACID+0.6VENT4
+  18           ELU1/ACIDCOMB/PP+PERM+0.8ACID+VENT1
+  19           ELU1/ACIDCOMB/PP+PERM+0.8ACID+VENT2
+  20           ELU1/ACIDCOMB/PP+PERM+0.8ACID+VENT3
+  21           ELU1/ACIDCOMB/PP+PERM+0.8ACID+VENT4
+  25           ELU1/ACIDCOMB/PP_V+PERM_V+ACID_V+0.6VENT1
+  26           ELU1/ACIDCOMB/PP_V+PERM_V+ACID_V+0.6VENT2
+  27           ELU1/ACIDCOMB/PP_V+PERM_V+ACID_V+0.6VENT3
+  28           ELU1/ACIDCOMB/PP_V+PERM_V+ACID_V+0.6VENT4
+  29           ELU1/ACIDCOMB/PP_V+PERM_V+0.8ACID_V+VENT1
+  30           ELU1/ACIDCOMB/PP_V+PERM_V+0.8ACID_V+VENT2
+  31           ELU1/ACIDCOMB/PP_V+PERM_V+0.8ACID_V+VENT3
+  32           ELU1/ACIDCOMB/PP_V+PERM_V+0.8ACID_V+VENT4
+
+Combinações de ELU para pilares e fundações
+===========================================
+Caso  Prefixo  Título
+  14           ELU1/ACIDCOMB/PP+PERM+ACID+0.6VENT1
+  15           ELU1/ACIDCOMB/PP+PERM+ACID+0.6VENT2
+  16           ELU1/ACIDCOMB/PP+PERM+ACID+0.6VENT3
+  17           ELU1/ACIDCOMB/PP+PERM+ACID+0.6VENT4
+  18           ELU1/ACIDCOMB/PP+PERM+0.8ACID+VENT1
+  19           ELU1/ACIDCOMB/PP+PERM+0.8ACID+VENT2
+  20           ELU1/ACIDCOMB/PP+PERM+0.8ACID+VENT3
+  21           ELU1/ACIDCOMB/PP+PERM+0.8ACID+VENT4
+  25           ELU1/ACIDCOMB/PP_V+PERM_V+ACID_V+0.6VENT1
+  26           ELU1/ACIDCOMB/PP_V+PERM_V+ACID_V+0.6VENT2
+  27           ELU1/ACIDCOMB/PP_V+PERM_V+ACID_V+0.6VENT3
+  28           ELU1/ACIDCOMB/PP_V+PERM_V+ACID_V+0.6VENT4
+  29           ELU1/ACIDCOMB/PP_V+PERM_V+0.8ACID_V+VENT1
+  30           ELU1/ACIDCOMB/PP_V+PERM_V+0.8ACID_V+VENT2
+  31           ELU1/ACIDCOMB/PP_V+PERM_V+0.8ACID_V+VENT3
+  32           ELU1/ACIDCOMB/PP_V+PERM_V+0.8ACID_V+VENT4
+
+Legenda para as tabelas de parâmetros de instabilidade
+======================================================
+Legenda    Valor
+Caso       Caso simples de vento ou combinação
+Ang        Ângulo de vento (graus)
+CTot       Somatória de cargas verticais (tf - característico)
+M2         Momento de 2a ordem das cargas verticais   (tfm - característico)
+CHor       Cargas horizontais (tf - característico)
+M1         Momento de 1a ordem das cargas horizontais (tfm - característico)
+Mig        Momento de desaprumo por imperfeições globais (tfm - característico)
+GamaZ      Coeficiente de avaliação da importância dos esforços de 2a ordem
+           globais para estruturas reticuladas com pelo menos 4 andares.
+           (1/(1-M2/M1*GamaF/GamaF3))
+FAVt       Fator de amplificação de esforços horizontais (vento) de 1a ordem 
+           para consideração simplificada de esforços de 2a ordem.
+           Calculado como GamaZ, mas leva em consideração o deslocamento 
+           horizontal das cargas verticais.
+MultH      Multiplicador de esforços horizontais derivado de FAVt
+Alfa       Parâmetro de instabilidade para estrutura reticulada simétrica
+Obs        Observações (A/B/C..). Quando definidas, ver significado a seguir.
+RM2M1      Relação 1+(M2/M1*GamaF/GamaF3) p/cálculo por P-Delta
+
+Parâmetro de estabilidade (GamaZ) para os carregamentos simples de vento
+========================================================================
+Caso   Ang     CTot       M2     CHor       M1      Mig   GamaZ   Alfa  Obs
+   5   90.    368.5      0.5      3.4     19.3      5.6   1.032 0.463          
+   6  270.    368.5      0.5      3.4     19.3      5.6   1.032 0.463          
+   7    0.    368.5      1.8     10.2     50.8      5.6   1.048 0.666   B      
+   8  180.    368.5      1.8     10.2     50.8      5.6   1.048 0.666   B      
+
+Parâmetro de estabilidade (FAVt ) para combinações de ELU - vigas e lajes
+=========================================================================
+Caso   Ang     CTot       M2     CHor       M1    MultH   FAVt   Alfa  Obs
+  14   90.    368.5      0.6      2.0     11.6    1.000   1.070 0.631   B      
+  15  270.    368.5     -0.0      2.0     11.6    1.000   1.032 0.176     D    
+  16    0.    368.5      1.1      6.1     30.5    1.000   1.048 0.697   B D    
+  17  180.    368.5      1.1      6.1     30.5    1.000   1.050 0.633   B      
+  18   90.    368.5      0.8      3.4     19.3    1.000   1.053 0.563          
+  19  270.    368.5      0.2      3.4     19.3    1.000   1.032 0.335     D    
+  20    0.    368.5      1.8     10.2     50.8    1.000   1.048 0.687   B      
+  21  180.    368.5      1.9     10.2     50.8    1.000   1.049 0.644   B      
+  25   90.    368.5      0.6      2.0     11.6    1.000   1.074 0.646   B      
+  26  270.    368.5     -0.1      2.0     11.6    1.000   1.032 0.110     D    
+  27    0.    368.5      1.1      6.1     30.5    1.000   1.047 0.710   B      
+  28  180.    368.5      1.1      6.1     30.5    1.000   1.049 0.618   B      
+  29   90.    368.5      0.8      3.4     19.3    1.000   1.055 0.573          
+  30  270.    368.5      0.1      3.4     19.3    1.000   1.032 0.319     D    
+  31    0.    368.5      1.8     10.2     50.8    1.000   1.048 0.694   B      
+  32  180.    368.5      1.8     10.2     50.8    1.000   1.048 0.635   B      
+
+Parâmetro de estabilidade (FAVt ) para combinações de ELU - pilares e fundações
+===============================================================================
+Caso   Ang     CTot       M2     CHor       M1    MultH   FAVt   Alfa  Obs
+  14   90.    368.5      0.6      2.0     11.6    1.000   1.070 0.631   B      
+  15  270.    368.5     -0.0      2.0     11.6    1.000   1.032 0.176     D    
+  16    0.    368.5      1.1      6.1     30.5    1.000   1.048 0.697   B D    
+  17  180.    368.5      1.1      6.1     30.5    1.000   1.050 0.633   B      
+  18   90.    368.5      0.8      3.4     19.3    1.000   1.053 0.563          
+  19  270.    368.5      0.2      3.4     19.3    1.000   1.032 0.335     D    
+  20    0.    368.5      1.8     10.2     50.8    1.000   1.048 0.687   B      
+  21  180.    368.5      1.9     10.2     50.8    1.000   1.049 0.644   B      
+  25   90.    368.5      0.6      2.0     11.6    1.000   1.074 0.646   B      
+  26  270.    368.5     -0.1      2.0     11.6    1.000   1.032 0.110     D    
+  27    0.    368.5      1.1      6.1     30.5    1.000   1.047 0.710   B      
+  28  180.    368.5      1.1      6.1     30.5    1.000   1.049 0.618   B      
+  29   90.    368.5      0.8      3.4     19.3    1.000   1.055 0.573          
+  30  270.    368.5      0.1      3.4     19.3    1.000   1.032 0.319     D    
+  31    0.    368.5      1.8     10.2     50.8    1.000   1.048 0.694   B      
+  32  180.    368.5      1.8     10.2     50.8    1.000   1.048 0.635   B      
+
+Observações IMPORTANTES
+=======================
+
+Observações para os casos com Obs="B":
+O parâmetro Alfa deste edifício indica que a estrutura é de
+nós móveis.
+
+Observações para os casos com Obs="D":
+O deslocamento horizontal das cargas verticais age de modo
+favorável diminuindo o GamaZ neste caso. O programa
+modificou o GamaZ pelo valor obtido no caso de vento simples
+nesta direção
+
+Para efeito de verificação da capacidade de rotação dos
+elementos estruturais, este edifício será considerado indeslocável.   
+
+Notas
+=====
+Embora o sistema permita controlar a transferência ou não de
+esforços e o uso ou não dos parâmetros de estabilidade para
+majorar os esforços horizontais, recomendamos que os
+esforços solicitantes com vento sejam sempre transferidos
+para dimensionamento e detalhamento, majorados se necessário
+conforme o cálculo dos parâmetros de estabilidade ou por
+processo P-Delta.
+
+Sugerimos a majoração automática dos esforços horizontais
+pelo GamaZ para valores de GamaZ entre 1.1 e 1.3, e somente
+para edificações com 4 pisos ou mais. Edificações com menos
+de 4 pisos podem ser analisada pelo parâmetro Alfa, desde
+que sejam simétricas. Em qualquer outro caso os parâmetros
+mostrados aqui não tem precisão e os efeitos de segunda
+ordem deverão ser analisados por um processo mais refinado,
+como P-Delta.
+
+O carregamento vertical usado para cálculo de momentos de
+segunda ordem é composto de todas as cargas verticais
+permanentes e acidentais, possivelmente com redução de
+sobrecargas. Isto vale tanto para os casos simples quanto
+para as combinações.
+
+Nas combinações são considerados os deslocamentos
+horizontais provocados pelas cargas verticais, mas somente de
+maneira desfavorável. Os GamaZ obtidos nos casos de vento
+simples servem como um valor mínimo.
+
+
+Verificações em ELS
+===================
+Caso  Prefixo  Título
+   5           .30VENT1
+   6           .30VENT2
+   7           .30VENT3
+   8           .30VENT4
+
+Valores máximos permitidos de deslocamento
+==========================================
+Horizontal absoluto         :   H/1700.     
+Altura do edifício          :   H= 11.10m
+Horizontal entre pavimentos :   Hi/850.      
+
+Legenda para a tabela de deslocamentos máximos
+==============================================
+Legenda    Valor
+Caso       Caso de carregamento de ELS
+DeslH      Máximo deslocamento horizontal absoluto (cm)
+Relat1     Valor relativo à altura total do edifício
+Piso       Piso de deslocamento máximo relativo
+DeslHp     Máximo deslocamento horizontal entre pisos (cm)
+Relat3     Valor relativo ao pé-direito do pavimento
+Obs        Observações (A/B/C..). Quando definidas, ver significado a seguir.
+
+Deslocamentos máximos
+=====================
+Caso          DeslH    Relat1          Obs
+   5           0.06    H/18144.             
+   6           0.06    H/18144.             
+   7           0.31    H/3603.            D 
+   8           0.31    H/3603.              
+
+Deslocamentos máximos entre pisos
+=================================
+Caso  Piso    DeslHp   Relat3          Obs
+   5    2      0.03    Hi/12570.            
+   6    2      0.03    Hi/12565.            
+   7    3      0.14    Hi/2314.           DE
+   8    3      0.14    Hi/2314.             
+
+Observações IMPORTANTES
+=======================
+
+Observações para os casos com Obs="D":
+Caso de carregamento com deslocamento absoluto máximo
+
+Observações para os casos com Obs="E":
+Caso de carregamento com deslocamento relativo máximo

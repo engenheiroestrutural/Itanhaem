@@ -1,0 +1,274 @@
+
+------------------------------------------------------------------------------
+                     GREFOR - Geração do modelo de grelha
+12/06/2021 13:23:35 C:\TQS\022-Itanhaem8\COBERTURA
+------------------------------------------------------------------------------
+
+Critérios carregados........... C:\TQS\022-Itanhaem8\CRITGRE.DAT
+Arquivo de carregamentos....... CARRGRE.DAT
+
+
+FCK definido no edifício
+=========================
+Valor =     300.00 kgf/cm2
+
+
+Critérios gerais
+=================
+
+Redutor de inércia a torção do comando TORÇÃO ...       1.00         ( REDTOR)
+Inércia de calculo das vigas .................... Seção T             
+FCK do concreto, kgf/cm2 ........................     300.00         ( FCK   )
+Fator VEC p/cálculo de E em função do FCK .......   13900.00         ( VEC   )
+Módulo de elasticidade longitudinal .............  .2684E+07         ( ELALON)
+Módulo de elasticidade transversal ..............  .1118E+07         ( ELATRA)
+Peso específico do concreto .....................       2.50         ( DESCON)
+Coeficiente de poisson ..........................        .20         ( POISSO)
+Redutor de mola XY para pilares elásticos .......       4.00         ( REDMOL)
+Pé direito do piso inferior......................       3.15
+Pé direito do piso superior......................       1.75
+Redutor de mola Z  para pilares elásticos .......       1.00         ( REDMOZ)
+Multip. da largura equiv de pilares elásticos ...       1.00         ( LEPMOL)
+Fator de engastamento parcial das vigas .........       1.00         ( ENGVIG)
+Condição de apoio padrão ........................ Elástico Independente    
+Numero de carregamentos verticais ...............          4
+Numero de combinações ...........................          5
+Envoltória definida .............................        Sim
+
+Lajes cujo carregamento nao foi distribuído para as vigas:
+==========================================================
+L301  L302  L303  L304  L305  L306  L307  L308  L309  L310  L311  L312  L313  
+L314  
+
+Apoios elásticos independentes
+==============================
+P1    P2    P4    P5    P8    P9    P10   P11   P12   P14   P15   P16   P18   
+P20   P24   P27   
+
+Vigas com consideração de inércia à torção:
+===========================================
+V301  V302  V307  V308  V313  
+
+Viga  301 apoio sobre pilar    1 Leqv   .140 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .24243E+03         KRY .27276E+02
+Viga  301 apoio sobre pilar    2 Leqv   .140 Lapo   .140 Capo   .290 Ang    .00
+                                 KRX  .56500E+02         KRY .24243E+03
+Viga  302 apoio sobre pilar    4 Leqv   .140 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .24243E+03         KRY .27276E+02
+Viga  302 apoio sobre pilar    5 Leqv   .140 Lapo   .140 Capo   .290 Ang    .00
+                                 KRX  .56500E+02         KRY .24243E+03
+Viga  303 apoio sobre pilar    9 Leqv   .140 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .67880E+03         KRY .76372E+02
+Viga  305 apoio sobre pilar   11 Leqv   .140 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .67880E+03         KRY .76372E+02
+Viga  305 apoio sobre pilar   12 Leqv   .140 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .67880E+03         KRY .76372E+02
+Viga  306 apoio sobre pilar   18 Leqv   .140 Lapo   .500 Capo   .160 Ang    .00
+                                 KRX  .39761E+04         KRY .11400E+03
+Viga  306 apoio sobre pilar   20 Leqv   .140 Lapo   .160 Capo   .500 Ang    .00
+                                 KRX  .40715E+03         KRY .34791E+04
+Viga  307 apoio sobre pilar   24 Leqv   .140 Lapo   .350 Capo   .160 Ang    .00
+                                 KRX  .48707E+03         KRY .40715E+02
+Viga  309 apoio sobre pilar   24 Leqv   .140 Lapo   .160 Capo   .350 Ang  90.00
+                                 KRX  .10179E+03         KRY .42618E+03
+Viga  309 apoio sobre pilar   18 Leqv   .140 Lapo   .160 Capo   .500 Ang  90.00
+                                 KRX  .40715E+03         KRY .34791E+04
+Viga  309 apoio sobre pilar   14 Leqv   .140 Lapo   .140 Capo   .450 Ang  90.00
+                                 KRX  .24548E+03         KRY .25362E+04
+Viga  309 apoio sobre pilar   10 Leqv   .140 Lapo   .140 Capo   .450 Ang  90.00
+                                 KRX  .24548E+03         KRY .25362E+04
+Viga  309 apoio sobre pilar    1 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .56500E+02         KRY .24243E+03
+Viga  310 apoio sobre pilar    4 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .56500E+02         KRY .24243E+03
+Viga  311 apoio sobre pilar   27 Leqv   .140 Lapo   .140 Capo   .450 Ang  90.00
+                                 KRX  .87672E+02         KRY .90580E+03
+Viga  312 apoio sobre pilar   11 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .15820E+03         KRY .67880E+03
+Viga  312 apoio sobre pilar    8 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .15820E+03         KRY .67880E+03
+Viga  313 apoio sobre pilar   16 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .56500E+02         KRY .24243E+03
+Viga  313 apoio sobre pilar   20 Leqv   .160 Lapo   .500 Capo   .160 Ang  90.00
+                                 KRX  .39761E+04         KRY .13029E+03
+Viga  313 apoio sobre pilar   15 Leqv   .140 Lapo   .140 Capo   .450 Ang  90.00
+                                 KRX  .24548E+03         KRY .25362E+04
+Viga  313 apoio sobre pilar   12 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .15820E+03         KRY .67880E+03
+Viga  313 apoio sobre pilar    9 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .15820E+03         KRY .67880E+03
+Viga  313 apoio sobre pilar    5 Leqv   .160 Lapo   .290 Capo   .140 Ang  90.00
+                                 KRX  .24243E+03         KRY .31172E+02
+***001 AVISO: Barra   24 em balanço, viga V  309 trecho    1
+***002 AVISO: Barra   21 em balanço, viga V  307 trecho    3
+***003 AVISO: Barra   62 em balanço, viga V  313 trecho    8
+***004 AVISO: Barra   42 em balanço, viga V  309 trecho   11
+***005 AVISO: Barra   10 em balanço, viga V  302 trecho    3
+***006 AVISO: Barra    5 em balanço, viga V  301 trecho    3
+***007 AVISO: Barra   18 em balanço, viga V  306 trecho    2
+***008 AVISO: Barra   14 em balanço, viga V  305 trecho    2
+
+
+
+Modelo da forma:
+
+Nós ...................................  109
+Vigas .................................   13
+Pilares ...............................   16
+Lajes .................................   14
+Lajes descarregadas ...................   14
+
+Modelo da grelha:
+
+Nós ...................................   69
+Materiais .............................    2
+Seções ................................   26
+Barras ................................   62
+Restrições ............................   29
+
+Caso de carregamento ..................    1
+===>>> Todas permanentes e acidentais dos pavimentos                           
+Forças nos nós ........................    7
+Carregamentos nas barras ..............   69
+Somatória de cargas verticais.(nos)....      0.73 tf
+Somatória de cargas verticais.(barras).     27.44 tf (só vigas)
+Cargas concentradas nas lajes .........      8.77 tf
+
+Caso de carregamento ..................    2
+===>>> Peso Próprio                                                            
+Carregamentos nas barras ..............   43
+Somatória de cargas verticais.(barras).     13.25 tf (só vigas)
+
+Caso de carregamento ..................    3
+===>>> Cargas permanentes                                                      
+Forças nos nós ........................    7
+Carregamentos nas barras ..............   46
+Somatória de cargas verticais.(nos)....      0.73 tf
+Somatória de cargas verticais.(barras).     14.19 tf (só vigas)
+Cargas concentradas nas lajes .........      8.77 tf
+
+Caso de carregamento ..................    4
+===>>> Cargas acidentais                                                       
+Carregamentos nas barras ..............   35
+Somatória de cargas verticais.(barras).     -0.00 tf (só vigas)
+
+Largura de banda original .............   47
+Largura de banda reduzida .............    4
+
+
+
+
+Critérios de geração automática de lajes nervuradas
+===================================================
+
+Arquivo de critérios ....................................... C:\TQS\022-Itanhaem8\NERVURA.DAT
+Comprimento mínimo de barra a ser gerada....................      30.00 cm
+Considerar seção T nas nervuras.............................        Sim
+Gravar dados de seção T p/cálculo não linear................        Sim
+Divisor da inércia à torção das barras internas do capitel..       6.00
+Divisor da inércia à torção das barras de bordo do capitel..       6.00
+Largura max p/geração de barras em maciços, em nervuras.....       4.00
+Divisor da inércia à flexao das barras do capitel...........       1.60
+Criação de barras rígidas dentro do pilar...................        Sim
+Plastificação das extremidades das barras das lajes.........        Não
+Divisor de inércia à flexão da plast. p/lajes treliçadas....     200.00
+Plastificação do apoio em pilares no meio da laje...........        Sim
+Divisor de inércia à flexão do trecho plastificado..........      40.00
+Criar apoio elástico independente da laje no pilar..........        Sim
+Divisor do coef. de mola p/apoio elástico independente......       4.00
+Extensao lim apoio elástico indep dentro do pilar (H barra).       1.50
+
+
+Geração automática de nervuras
+
+Laje      Carga      Módulos       Módulos       Módulos    Volume de
+        lançada    120 x   40   115.7x   40      Outros     concreto
+           tf                                                 m3
+
+L301       2.20                                              0.48
+L302       0.76                                              0.16
+L303       3.64                                              0.79
+L304       0.56                                              0.12
+L305       9.95       22                          29         1.48
+L306       2.54                                              0.55
+L307       1.35                      4             8         0.20
+L308       4.34                                              0.95
+L309      10.96       38                          19         1.65
+L310       2.19                                              0.48
+L311       0.64                                              0.14
+L312       2.56                                              0.56
+L313       0.54                                              0.12
+L314       1.98                                              0.43
+        -------    -----         -----         -----      -------
+          44.21       60             4            56         8.11
+
+
+Caso de carregamento    2
+=========================
+
+Laje      Carga
+        lançada (tf)
+
+L301       1.20
+L302        .41
+L303       1.98
+L304        .30
+L305       3.78
+L306       1.39
+L307        .52
+L308       2.37
+L309       4.21
+L310       1.19
+L311        .35
+L312       1.39
+L313        .30
+L314       1.08
+        -------
+          20.47
+
+Caso de carregamento    3
+=========================
+
+Laje      Carga
+        lançada (tf)
+
+L301        .60
+L302        .21
+L303        .99
+L304        .15
+L305       3.70
+L306        .69
+L307        .50
+L308       1.18
+L309       4.05
+L310        .60
+L311        .17
+L312        .70
+L313        .15
+L314        .54
+        -------
+          14.24
+
+Caso de carregamento    4
+=========================
+
+Laje      Carga
+        lançada (tf)
+
+L301        .40
+L302        .14
+L303        .66
+L304        .10
+L305       2.47
+L306        .46
+L307        .33
+L308        .79
+L309       2.70
+L310        .40
+L311        .12
+L312        .46
+L313        .10
+L314        .36
+        -------
+           9.49
+

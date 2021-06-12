@@ -1,0 +1,638 @@
+
+------------------------------------------------------------------------------
+                PORFOR - Geração do modelo de pórtico espacial
+    T  Q  S               Formas   V19.16.3    12/06/21 13:25:05
+C:\TQS\022-Itanhaem8\ESPACIAL
+JONAS BENEDETT DORR                     
+RUA CEL. VICENTE, 2621                  
+------------------------------------------------------------------------------
+
+
+Processamento de plantas do edifício
+====================================
+Edifício ..... 022-Itanhaem8
+     Projeto    1
+     Planta Fundacao
+            Projeto    2  Pasta C:\TQS\022-Itanhaem8\Fundacao
+     Planta TERREO
+            Projeto    3  Pasta C:\TQS\022-Itanhaem8\TERREO
+     Planta SUPERIOR
+            Projeto    4  Pasta C:\TQS\022-Itanhaem8\SUPERIOR
+     Planta COBERTURA
+            Projeto    5  Pasta C:\TQS\022-Itanhaem8\COBERTURA
+     Planta TELHADO
+            Projeto    6  Pasta C:\TQS\022-Itanhaem8\TELHADO
+     Planta COBCXDAGUA
+            Projeto    7  Pasta C:\TQS\022-Itanhaem8\COBCXDAGUA
+
+Arquivo de critérios ............... CRITPOR.DAT
+Arquivo de carregamentos ........... CARRPOR.DAT
+Condições de contorno .............. CONTPOR.DAT
+
+FCK no edifício:
+================
+ FCK vigas   =  300. kgf/cm2                     ELALON =0.2952E+07
+
+Modelo de cálculo
+=================
+Modelo específico para ..........................        ELU 
+Coeficiente de não linearidade física p/vigas....        .40
+Coeficiente de não linearidade física p/pilares..        .80
+Módulo de elasticidade considerado...............     Secante+10%  
+
+Geração do modelo
+=================
+FCK do concreto, kgf/cm2 ........................     300.00         ( FCK   )
+Fator VEC p/cálculo de E em função do FCK .......   13900.00         ( VEC   )
+Uso de offset rígido ............................        Sim         ( OFFRIG)
+Módulo de elasticidade longitudinal .............  .2952E+07         ( ELALON)
+Módulo de elasticidade transversal ..............  .1230E+07         ( ELATRA)
+Coeficiente de poisson ..........................        .20         ( POISSO)
+Peso específico do concreto .....................       2.50         ( DESCON)
+Eixo local do pilar ............................. Paralelo/principal ( EIXPRI)
+Processo de distribuição de vento ............... Área de influência ( DISVEN)
+Rigidez lateral alta em todas as vigas ..........        Não         (NRIGLAT)
+Rigidez lateral fixa das vigas ..................   10.0     m4
+Multiplica seção dos pilares p/diminuir desloc Z.        Sim         ( RIGAXI)
+Multiplicador da seção dos pilares ..............       3.00         ( MULAXI)
+Redutor de inércia à torção do comando TORÇÃO ...       1.00         ( REDTOR)
+Redutor de inércia à flexão do comando FLEXÃO ...       1.00         ( REDFLX)
+Inércia de cálculo das vigas .................... Seção T             
+Engastamento parcial das vigas ..................       1.00         ( ENGVIG)
+Multiplicador de inércia das vigas de transição..      10.00         ( MULETR)
+Flexibilização das ligações viga-pilar ..........        Sim         ( FLXPIL)
+Redutor do coef de mola nas ligações viga-pilar..       1.00         ( REDMOL)
+Multipl da larg de apoio nas ligações viga-pilar.       1.50         ( LEPMOV)
+Coeficiente padrão de mola à rotação X...........   .000    
+Coeficiente padrão de mola à rotação Y...........   .000    
+Coeficiente padrão de mola à rotação Z...........   .500E+05
+Coeficiente padrão de mola à translação X........   .500E+05
+Coeficiente padrão de mola à translação Y........   .500E+05
+Coeficiente padrão de mola À translação Z........   .000    
+
+Estabilidade global
+===================
+Majorador de cargas vert  p/cálculo de instabil..       1.00         ( GAMAFZ)
+Majorador de cargas horiz p/cálculo de instabil..       1.40         ( GAMAFH)
+Coeficiente de nao linearidade física ...........       1.00         ( COENLF)
+Cálculo de GAMAZ com carga acidental reduzida....        Não
+
+Transferência de esforços
+=========================
+Força transfer. esforços verticais lajes planas..        Não         (NTRNVER)
+Consideração automática de GAMAZ na transf.......        Sim
+GAMAZ mínimo para considerar na transferência ...      1.100
+GAMAZ máximo para considerar na transferência ...      1.300
+Número de carregamentos verticais ...............          8
+Número de carregamentos horizontais .............          4
+Número de combinações ...........................         22
+Transferência de esforços para vigas definida ...        Sim
+Transferência de esforços para pilares definida .        Sim
+
+Modelo das lajes
+================
+Vigas recebem cargas das lajes calculadas como grelha
+
+
+Casos de carregamento vertical
+==============================
+   1 (  1)   'Todas permanentes e acidentais dos pavimentos'
+   2 (  2)   'Peso Próprio'
+   3 (  3)   'Cargas permanentes'
+   4 (  4)   'Cargas acidentais'
+   9 (  1)   'Todas permanentes e acidentais dos pavimentos - VTN'
+  10 (  2)   'Peso Próprio - VTN'
+  11 (  3)   'Cargas permanentes - VTN'
+  12 (  4)   'Cargas acidentais - VTN'
+
+
+Casos de carregamento horizontal
+================================
+   5   'Vento (1) 90°'
+        V0= 38.0 m/s  S1= 1.00 Rug=3 / CL=B S3= 1.00 Ca=  .76 A=  90.0ø
+   6   'Vento (2) 270°'
+        V0= 38.0 m/s  S1= 1.00 Rug=3 / CL=B S3= 1.00 Ca=  .76 A= 270.0ø
+   7   'Vento (3) 0°'
+        V0= 38.0 m/s  S1= 1.00 Rug=3 / CL=B S3= 1.00 Ca= 1.03 A=    .0ø
+   8   'Vento (4) 180°'
+        V0= 38.0 m/s  S1= 1.00 Rug=3 / CL=B S3= 1.00 Ca= 1.03 A= 180.0ø
+
+
+Combinações de carregamentos
+============================
+   1   'ELU1/PERMACID/PP+PERM+ACID'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    4  Coeficiente     1.000
+   2   'ELU1/ACIDCOMB/PP+PERM+ACID+0.6VENT1'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    4  Coeficiente     1.000
+         Caso    5  Coeficiente      .600
+   3   'ELU1/ACIDCOMB/PP+PERM+ACID+0.6VENT2'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    4  Coeficiente     1.000
+         Caso    6  Coeficiente      .600
+   4   'ELU1/ACIDCOMB/PP+PERM+ACID+0.6VENT3'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    4  Coeficiente     1.000
+         Caso    7  Coeficiente      .600
+   5   'ELU1/ACIDCOMB/PP+PERM+ACID+0.6VENT4'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    4  Coeficiente     1.000
+         Caso    8  Coeficiente      .600
+   6   'ELU1/ACIDCOMB/PP+PERM+0.8ACID+VENT1'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    4  Coeficiente      .800
+         Caso    5  Coeficiente     1.000
+   7   'ELU1/ACIDCOMB/PP+PERM+0.8ACID+VENT2'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    4  Coeficiente      .800
+         Caso    6  Coeficiente     1.000
+   8   'ELU1/ACIDCOMB/PP+PERM+0.8ACID+VENT3'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    4  Coeficiente      .800
+         Caso    7  Coeficiente     1.000
+   9   'ELU1/ACIDCOMB/PP+PERM+0.8ACID+VENT4'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    4  Coeficiente      .800
+         Caso    8  Coeficiente     1.000
+  10   'FOGO/PERMVAR/PP+PERM+0.6ACID'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    4  Coeficiente      .600
+  11   'COMBFLU/COMBFLU/PP+PERM+0.6ACID'
+         Caso    2  Coeficiente     1.000
+         Caso    3  Coeficiente     1.000
+         Caso    4  Coeficiente      .600
+  12   'ELU1/PERMACID/PP_V+PERM_V+ACID_V'
+         Caso   10  Coeficiente     1.000
+         Caso   11  Coeficiente     1.000
+         Caso   12  Coeficiente     1.000
+  13   'ELU1/ACIDCOMB/PP_V+PERM_V+ACID_V+0.6VENT1'
+         Caso   10  Coeficiente     1.000
+         Caso   11  Coeficiente     1.000
+         Caso   12  Coeficiente     1.000
+         Caso    5  Coeficiente      .600
+  14   'ELU1/ACIDCOMB/PP_V+PERM_V+ACID_V+0.6VENT2'
+         Caso   10  Coeficiente     1.000
+         Caso   11  Coeficiente     1.000
+         Caso   12  Coeficiente     1.000
+         Caso    6  Coeficiente      .600
+  15   'ELU1/ACIDCOMB/PP_V+PERM_V+ACID_V+0.6VENT3'
+         Caso   10  Coeficiente     1.000
+         Caso   11  Coeficiente     1.000
+         Caso   12  Coeficiente     1.000
+         Caso    7  Coeficiente      .600
+  16   'ELU1/ACIDCOMB/PP_V+PERM_V+ACID_V+0.6VENT4'
+         Caso   10  Coeficiente     1.000
+         Caso   11  Coeficiente     1.000
+         Caso   12  Coeficiente     1.000
+         Caso    8  Coeficiente      .600
+  17   'ELU1/ACIDCOMB/PP_V+PERM_V+0.8ACID_V+VENT1'
+         Caso   10  Coeficiente     1.000
+         Caso   11  Coeficiente     1.000
+         Caso   12  Coeficiente      .800
+         Caso    5  Coeficiente     1.000
+  18   'ELU1/ACIDCOMB/PP_V+PERM_V+0.8ACID_V+VENT2'
+         Caso   10  Coeficiente     1.000
+         Caso   11  Coeficiente     1.000
+         Caso   12  Coeficiente      .800
+         Caso    6  Coeficiente     1.000
+  19   'ELU1/ACIDCOMB/PP_V+PERM_V+0.8ACID_V+VENT3'
+         Caso   10  Coeficiente     1.000
+         Caso   11  Coeficiente     1.000
+         Caso   12  Coeficiente      .800
+         Caso    7  Coeficiente     1.000
+  20   'ELU1/ACIDCOMB/PP_V+PERM_V+0.8ACID_V+VENT4'
+         Caso   10  Coeficiente     1.000
+         Caso   11  Coeficiente     1.000
+         Caso   12  Coeficiente      .800
+         Caso    8  Coeficiente     1.000
+  21   'FOGO/PERMVAR/PP_V+PERM_V+0.6ACID_V'
+         Caso   10  Coeficiente     1.000
+         Caso   11  Coeficiente     1.000
+         Caso   12  Coeficiente      .600
+  22   'COMBFLU/COMBFLU/PP_V+PERM_V+0.6ACID_V'
+         Caso   10  Coeficiente     1.000
+         Caso   11  Coeficiente     1.000
+         Caso   12  Coeficiente      .600
+
+Envoltória de carregamentos a ser transferida para vigas
+========================================================
+   13   14   15   16   17   18   19   20   21   24   25   26   27   28
+   29   30   31   32
+
+Carregamentos a serem transferidos para pilares
+===============================================
+   13   14   15   16   17   18   19   20   21   24   25   26   27   28
+   29   30   31   32
+
+Carregamento de vento
+=====================
+***001 AVISO: Viga  217 com apoio inicial nulo no vão    1
+
+Caso  5  Piso  2  L=    8.5 m   PD= 3.15 m    Q= 0.052 tf/m2   F =  1.06 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.76
+                  S3= 1.00      Ca= 0.76      H =   1.6 m      A=  90.0ø
+
+Caso  6  Piso  2  L=    8.5 m   PD= 3.15 m    Q= 0.052 tf/m2   F =  1.06 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.76
+                  S3= 1.00      Ca= 0.76      H =   1.6 m      A= 270.0ø
+
+Caso  7  Piso  2  L=   22.8 m   PD= 3.15 m    Q= 0.052 tf/m2   F =  3.84 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.76
+                  S3= 1.00      Ca= 1.03      H =   1.6 m      A=   0.0ø
+
+Caso  8  Piso  2  L=   22.8 m   PD= 3.15 m    Q= 0.052 tf/m2   F =  3.84 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.76
+                  S3= 1.00      Ca= 1.03      H =   1.6 m      A= 180.0ø
+
+Caso  5  Piso  3  L=    8.0 m   PD= 3.15 m    Q= 0.065 tf/m2   F =  1.25 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.85
+                  S3= 1.00      Ca= 0.76      H =   4.7 m      A=  90.0ø
+
+Caso  6  Piso  3  L=    8.0 m   PD= 3.15 m    Q= 0.065 tf/m2   F =  1.25 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.85
+                  S3= 1.00      Ca= 0.76      H =   4.7 m      A= 270.0ø
+
+Caso  7  Piso  3  L=   22.2 m   PD= 3.15 m    Q= 0.065 tf/m2   F =  4.72 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.85
+                  S3= 1.00      Ca= 1.03      H =   4.7 m      A=   0.0ø
+
+Caso  8  Piso  3  L=   22.2 m   PD= 3.15 m    Q= 0.065 tf/m2   F =  4.72 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.85
+                  S3= 1.00      Ca= 1.03      H =   4.7 m      A= 180.0ø
+
+Caso  5  Piso  4  L=    7.9 m   PD= 1.75 m    Q= 0.071 tf/m2   F =  0.75 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.89
+                  S3= 1.00      Ca= 0.76      H =   7.2 m      A=  90.0ø
+
+Caso  6  Piso  4  L=    7.9 m   PD= 1.75 m    Q= 0.071 tf/m2   F =  0.75 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.89
+                  S3= 1.00      Ca= 0.76      H =   7.2 m      A= 270.0ø
+
+Caso  7  Piso  4  L=   10.7 m   PD= 1.75 m    Q= 0.071 tf/m2   F =  1.37 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.89
+                  S3= 1.00      Ca= 1.03      H =   7.2 m      A=   0.0ø
+
+Caso  8  Piso  4  L=   10.7 m   PD= 1.75 m    Q= 0.071 tf/m2   F =  1.37 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.89
+                  S3= 1.00      Ca= 1.03      H =   7.2 m      A= 180.0ø
+
+Caso  5  Piso  5  L=    2.8 m   PD= 2.05 m    Q= 0.075 tf/m2   F =  0.33 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.91
+                  S3= 1.00      Ca= 0.76      H =   9.1 m      A=  90.0ø
+
+Caso  6  Piso  5  L=    2.8 m   PD= 2.05 m    Q= 0.075 tf/m2   F =  0.33 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.91
+                  S3= 1.00      Ca= 0.76      H =   9.1 m      A= 270.0ø
+
+Caso  7  Piso  5  L=    1.7 m   PD= 2.05 m    Q= 0.075 tf/m2   F =  0.27 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.91
+                  S3= 1.00      Ca= 1.03      H =   9.1 m      A=   0.0ø
+
+Caso  8  Piso  5  L=    1.7 m   PD= 2.05 m    Q= 0.075 tf/m2   F =  0.27 tf
+                  V0= 38.0 m/s  S1= 1.00      Rug=3 / CL=B     S2=  0.91
+                  S3= 1.00      Ca= 1.03      H =   9.1 m      A= 180.0ø
+
+Pressão média de vento
+======================
+Caso   Ângulo      Área       Pressão
+       graus        m2         tf/m2
+   5    90.00      71.51       .047
+   6   270.00      71.51       .047
+   7      .00     163.90       .062
+   8   180.00     163.90       .062
+
+****** AVISO: Barra  241 em balanço, viga V  212 trecho    2 piso  2
+****** AVISO: Barra  242 em balanço, viga V  213 trecho    1 piso  2
+****** AVISO: Barra  263 em balanço, viga V  215 trecho    1 piso  2
+****** AVISO: Barra  330 em balanço, viga V  301 trecho    3 piso  3
+****** AVISO: Barra  336 em balanço, viga V  302 trecho    3 piso  3
+****** AVISO: Barra  343 em balanço, viga V  305 trecho    2 piso  3
+****** AVISO: Barra  349 em balanço, viga V  306 trecho    2 piso  3
+****** AVISO: Barra  353 em balanço, viga V  307 trecho    3 piso  3
+****** AVISO: Barra  356 em balanço, viga V  309 trecho    1 piso  3
+****** AVISO: Barra  372 em balanço, viga V  309 trecho   11 piso  3
+****** AVISO: Barra  400 em balanço, viga V  313 trecho    8 piso  3
+
+
+Modelo da forma
+===============
+PISO  Proj   COTA   Pe Dir  No ini  Bar ini      Nos   Vigas  Pilares  Lajes
+
+  0      2     0.0   0.00       1        1        28       0      28       0
+  1      3     1.0   1.00      29        1       134      22      29       0
+  2      4     4.2   3.15     133      149       178      23      26      23
+  3      5     7.3   3.15     249      309       109      13      16      14
+  4      6     9.1   1.75     319      401        39      10       9       8
+  5      7    11.1   2.05     361      459        15       4       4       0
+
+
+Modelo do pórtico espacial
+==========================
+
+Nós ................................  373
+Materiais ..........................    2
+Seções .............................   47
+Barras .............................  475
+Restrições .........................   28
+
+Caso de carregamento ...............    1
+===>>> Todas permanentes e acidentais dos pavimentos                           
+Forças nos nos .....................   99
+Carregamentos nas barras ........... 2020
+Somatória de cargas verticais.......    368.72 tf
+
+Caso de carregamento ...............    2
+===>>> Peso Próprio                                                            
+Forças nos nos .....................   43
+Carregamentos nas barras ........... 1589
+Somatória de cargas verticais.......    144.13 tf
+
+Caso de carregamento ...............    3
+===>>> Cargas permanentes                                                      
+Forças nos nos .....................  101
+Carregamentos nas barras ........... 1491
+Somatória de cargas verticais.......    178.46 tf
+
+Caso de carregamento ...............    4
+===>>> Cargas acidentais                                                       
+Forças nos nos .....................   52
+Carregamentos nas barras ........... 1201
+Somatória de cargas verticais.......     46.28 tf
+
+Caso de carregamento ...............    5
+===>>> Vento (1) 90°                                                           
+Forças nos nos .....................  106
+Somatória de cargas horizontais.....      3.39 tf
+
+Caso de carregamento ...............    6
+===>>> Vento (2) 270°                                                          
+Forças nos nos .....................  106
+Somatória de cargas horizontais.....      3.39 tf
+
+Caso de carregamento ...............    7
+===>>> Vento (3) 0°                                                            
+Forças nos nos .....................  106
+Somatória de cargas horizontais.....     10.20 tf
+
+Caso de carregamento ...............    8
+===>>> Vento (4) 180°                                                          
+Forças nos nos .....................  106
+Somatória de cargas horizontais.....     10.20 tf
+
+Caso de carregamento ...............    9
+===>>> Todas permanentes e acidentais dos pavimentos - VTN                     
+Forças nos nos .....................   99
+Carregamentos nas barras ........... 2020
+Somatória de cargas verticais.......    368.72 tf
+
+Caso de carregamento ...............   10
+===>>> Peso Próprio - VTN                                                      
+Forças nos nos .....................   43
+Carregamentos nas barras ........... 1589
+Somatória de cargas verticais.......    144.13 tf
+
+Caso de carregamento ...............   11
+===>>> Cargas permanentes - VTN                                                
+Forças nos nos .....................  101
+Carregamentos nas barras ........... 1491
+Somatória de cargas verticais.......    178.46 tf
+
+Caso de carregamento ...............   12
+===>>> Cargas acidentais - VTN                                                 
+Forças nos nos .....................   52
+Carregamentos nas barras ........... 1201
+Somatória de cargas verticais.......     46.28 tf
+
+
+Relação formas - pórtico
+========================
+
+P1     Piso :     1    2    3
+       Barra:     1  149  309
+       Ang.L:   180  180  180
+
+P2     Piso :     1    2    3
+       Barra:     2  150  310
+       Ang.L:    90   90   90
+
+P3     Piso :     1    2
+       Barra:     3  151
+       Ang.L:   180  180
+
+P4     Piso :     1    2    3
+       Barra:     4  152  311
+       Ang.L:   180  180  180
+
+P5     Piso :     1    2    3
+       Barra:     5  153  312
+       Ang.L:   270  270  270
+
+P6     Piso :     1    2
+       Barra:     6  154
+       Ang.L:   180  180
+
+P7     Piso :     1
+       Barra:     7
+       Ang.L:   180
+
+P8     Piso :     1    2    3    4    5
+       Barra:     8  155  313  401  459
+       Ang.L:   180  180  180  180  180
+
+P9     Piso :     1    2    3    4    5
+       Barra:     9  156  314  402  460
+       Ang.L:   180  180  180  180  180
+
+P10    Piso :     1    2    3    4
+       Barra:    10  157  315  403
+       Ang.L:   180  180  180  180
+
+P11    Piso :     1    2    3    4    5
+       Barra:    11  158  316  404  461
+       Ang.L:   180  180  180  180  180
+
+P12    Piso :     1    2    3    4    5
+       Barra:    12  159  317  405  462
+       Ang.L:   180  180  180  180  180
+
+P13    Piso :     1    2
+       Barra:    13  160
+       Ang.L:   180  180
+
+P14    Piso :     1    2    3    4
+       Barra:    14  161  318  406
+       Ang.L:   180  180  180  180
+
+P15    Piso :     1    2    3    4
+       Barra:    15  162  319  407
+       Ang.L:     0    0    0    0
+
+P16    Piso :     3
+       Barra:   320
+       Ang.L:   180
+
+P17    Piso :     2
+       Barra:   163
+       Ang.L:   180
+
+P18    Piso :     1    2    3    4
+       Barra:    16  164  321  408
+       Ang.L:   180  180  180  180
+
+P19    Piso :     1    2    2
+       Barra:    17  165  166
+       Ang.L:   180  180  180
+
+P20    Piso :     1    2    2    3    4
+       Barra:    18  167  168  322  409
+       Ang.L:     0    0    0    0    0
+
+P21    Piso :     1    2
+       Barra:    19  169
+       Ang.L:   180  180
+
+P22    Piso :     1
+       Barra:    20
+       Ang.L:   180
+
+P23    Piso :     1
+       Barra:    21
+       Ang.L:   180
+
+P24    Piso :     1    2    3
+       Barra:    22  170  323
+       Ang.L:   180  180  180
+
+P25    Piso :     1
+       Barra:    23
+       Ang.L:     0
+
+P26    Piso :     1    2
+       Barra:    24  171
+       Ang.L:   180  180
+
+P27    Piso :     1    2    3
+       Barra:    25  172  324
+       Ang.L:     0    0    0
+
+P28    Piso :     1    2
+       Barra:    26  173
+       Ang.L:   180  180
+
+P29    Piso :     1    2
+       Barra:    27  174
+       Ang.L:   180  180
+
+P30    Piso :     1    2
+       Barra:    28  175
+       Ang.L:     0    0
+
+
+Viga    Barras - Piso     0
+===========================
+
+
+Viga    Barras - Piso     1
+===========================
+
+V101    29   31   33
+V102    35   37   38   39   42
+V103    44   45
+V104    47
+V105    50   53   55   57
+V106    59   63
+V107    64   69   72
+V108    74
+V109    76
+V110    78
+V111    81   83
+V112    85
+V113    88   90   92   93   94   96   98  100  101  102
+V114   104
+V115   107  108
+V116   110  114
+V117   116
+V118   117  119
+V119   122
+V120   126  128  131  133  135
+V121   137  140  142  143  145  147
+
+Viga    Barras - Piso     2
+===========================
+
+V201   181  183  186
+V202   188  190  191  194
+V203   197
+V204   199  200
+V205   201  204
+V206   206  208  209  212
+V207   213
+V208   214  219  222
+V209   225
+V210   227  229  230
+V211   233  235  236
+V212   238  241
+V213   242  245  246  248  250  253  256  257  258
+V214   260  261
+V215   263  266  269
+V216   270
+V217   271  272
+V218   273  275  278
+V219   279  280  281  283  285  288  291
+V220   293  295
+V221   297  300  302  303  305  307
+V8001  176  177
+V8002  178  179
+
+Viga    Barras - Piso     3
+===========================
+
+V301   325  327  330
+V302   331  333  336
+V303   337
+V304   339
+V305   340  343
+V306   344  349
+V307   350  352  353
+V308   354  355
+V309   356  357  359  361  364  367  368  369  372
+V310   373
+V311   375  377
+V312   378  380  383
+V313   384  385  388  390  392  395  398  400
+
+Viga    Barras - Piso     4
+===========================
+
+V401   410  411  413
+V402   414
+V403   415
+V404   418  422
+V405   423  428
+V406   429  430
+V407   431  433  436  439  440
+V408   441  443  446
+V409   447  449  451  454
+V410   456  457  458
+
+Viga    Barras - Piso     5
+===========================
+
+V501   463
+V502   465
+V503   468  472
+V504   473
+
+
+
