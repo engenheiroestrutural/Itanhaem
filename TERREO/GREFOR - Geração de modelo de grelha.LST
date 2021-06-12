@@ -1,0 +1,259 @@
+
+------------------------------------------------------------------------------
+                     GREFOR - Geração do modelo de grelha
+12/06/2021 13:24:22 C:\TQS\022-Itanhaem8\TERREO
+------------------------------------------------------------------------------
+
+Critérios carregados........... C:\TQS\022-Itanhaem8\CRITGRE.DAT
+Arquivo de carregamentos....... CARRGRE.DAT
+
+
+FCK definido no edifício
+=========================
+Valor =     300.00 kgf/cm2
+
+
+Critérios gerais
+=================
+
+Redutor de inércia a torção do comando TORÇÃO ...       1.00         ( REDTOR)
+Inércia de calculo das vigas .................... Seção T             
+FCK do concreto, kgf/cm2 ........................     300.00         ( FCK   )
+Fator VEC p/cálculo de E em função do FCK .......   13900.00         ( VEC   )
+Módulo de elasticidade longitudinal .............  .2684E+07         ( ELALON)
+Módulo de elasticidade transversal ..............  .1118E+07         ( ELATRA)
+Peso específico do concreto .....................       2.50         ( DESCON)
+Coeficiente de poisson ..........................        .20         ( POISSO)
+Redutor de mola XY para pilares elásticos .......       4.00         ( REDMOL)
+Pé direito do piso inferior......................       1.00
+Pé direito do piso superior......................       3.15
+Redutor de mola Z  para pilares elásticos .......       1.00         ( REDMOZ)
+Multip. da largura equiv de pilares elásticos ...       1.00         ( LEPMOL)
+Fator de engastamento parcial das vigas .........       1.00         ( ENGVIG)
+Condição de apoio padrão ........................ Elástico Independente    
+Numero de carregamentos verticais ...............          4
+Numero de combinações ...........................          5
+Envoltória definida .............................        Sim
+
+Apoios elásticos independentes
+==============================
+P1    P2    P3    P4    P5    P6    P7    P8    P9    P10   P11   P12   P13   
+P14   P15   P17   P18   P19   P20   P21   P22   P23   P24   P25   P26   P27   
+P28   P29   P30   
+
+Vigas com consideração de inércia à torção:
+===========================================
+V8002 
+
+Viga  101 apoio sobre pilar    1 Leqv   .200 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .10061E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.59107E+03
+Viga  101 apoio sobre pilar    2 Leqv   .140 Lapo   .140 Capo   .290 Ang    .00
+                                 KRX  .23447E+03         KRY .10061E+04
+                                 KTX 0.59107E+03         KTY0.13775E+03
+Viga  101 apoio sobre pilar    3 Leqv   .190 Lapo   .190 Capo   .190 Ang    .00
+                                 KRX  .38400E+03         KRY .38400E+03
+                                 KTX 0.22559E+03         KTY0.22559E+03
+Viga  102 apoio sobre pilar    4 Leqv   .200 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .10061E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.59107E+03
+Viga  102 apoio sobre pilar    5 Leqv   .140 Lapo   .140 Capo   .290 Ang    .00
+                                 KRX  .23447E+03         KRY .10061E+04
+                                 KTX 0.59107E+03         KTY0.13775E+03
+Viga  102 apoio sobre pilar    6 Leqv   .190 Lapo   .190 Capo   .190 Ang    .00
+                                 KRX  .38400E+03         KRY .38400E+03
+                                 KTX 0.22559E+03         KTY0.22559E+03
+Viga  103 apoio sobre pilar    7 Leqv   .190 Lapo   .190 Capo   .190 Ang    .00
+                                 KRX  .29147E+03         KRY .29147E+03
+                                 KTX 0.21860E+03         KTY0.21860E+03
+Viga  104 apoio sobre pilar    8 Leqv   .200 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .10061E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.59107E+03
+Viga  104 apoio sobre pilar    9 Leqv   .200 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .10061E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.59107E+03
+Viga  105 apoio sobre pilar   10 Leqv   .200 Lapo   .450 Capo   .140 Ang    .00
+                                 KRX  .37591E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.22084E+04
+Viga  105 apoio sobre pilar   11 Leqv   .200 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .10061E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.59107E+03
+Viga  105 apoio sobre pilar   12 Leqv   .200 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .10061E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.59107E+03
+Viga  105 apoio sobre pilar   13 Leqv   .190 Lapo   .190 Capo   .190 Ang    .00
+                                 KRX  .38400E+03         KRY .38400E+03
+                                 KTX 0.22559E+03         KTY0.22559E+03
+Viga  106 apoio sobre pilar   14 Leqv   .200 Lapo   .450 Capo   .140 Ang    .00
+                                 KRX  .37591E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.22084E+04
+Viga  106 apoio sobre pilar   15 Leqv   .200 Lapo   .450 Capo   .140 Ang    .00
+                                 KRX  .37591E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.22084E+04
+Viga  107 apoio sobre pilar   18 Leqv   .200 Lapo   .500 Capo   .160 Ang    .00
+                                 KRX  .58931E+04         KRY .24138E+03
+                                 KTX 0.14181E+03         KTY0.34621E+04
+Viga  107 apoio sobre pilar   19 Leqv   .160 Lapo   .160 Capo   .500 Ang    .00
+                                 KRX  .60345E+03         KRY .58931E+04
+                                 KTX 0.34621E+04         KTY0.35452E+03
+Viga  107 apoio sobre pilar   20 Leqv   .160 Lapo   .160 Capo   .500 Ang    .00
+                                 KRX  .60345E+03         KRY .58931E+04
+                                 KTX 0.34621E+04         KTY0.35452E+03
+Viga  107 apoio sobre pilar   21 Leqv   .190 Lapo   .190 Capo   .190 Ang    .00
+                                 KRX  .38400E+03         KRY .38400E+03
+                                 KTX 0.22559E+03         KTY0.22559E+03
+Viga  108 apoio sobre pilar   22 Leqv   .200 Lapo   .200 Capo   .200 Ang    .00
+                                 KRX  .35785E+03         KRY .35785E+03
+                                 KTX 0.26838E+03         KTY0.26838E+03
+Viga  109 apoio sobre pilar   23 Leqv   .200 Lapo   .200 Capo   .200 Ang    .00
+                                 KRX  .35785E+03         KRY .35785E+03
+                                 KTX 0.26838E+03         KTY0.26838E+03
+Viga  110 apoio sobre pilar   24 Leqv   .200 Lapo   .350 Capo   .160 Ang    .00
+                                 KRX  .20213E+04         KRY .24138E+03
+                                 KTX 0.14181E+03         KTY0.11875E+04
+Viga  110 apoio sobre pilar   25 Leqv   .200 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .76366E+03         KRY .12274E+03
+                                 KTX 0.92056E+02         KTY0.57274E+03
+Viga  111 apoio sobre pilar   27 Leqv   .200 Lapo   .450 Capo   .140 Ang    .00
+                                 KRX  .37591E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.22084E+04
+Viga  111 apoio sobre pilar   28 Leqv   .190 Lapo   .190 Capo   .190 Ang    .00
+                                 KRX  .38400E+03         KRY .38400E+03
+                                 KTX 0.22559E+03         KTY0.22559E+03
+Viga  112 apoio sobre pilar   29 Leqv   .200 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .10061E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.59107E+03
+Viga  112 apoio sobre pilar   30 Leqv   .200 Lapo   .290 Capo   .140 Ang    .00
+                                 KRX  .10061E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.59107E+03
+Viga  113 apoio sobre pilar   29 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .23447E+03         KRY .10061E+04
+                                 KTX 0.59107E+03         KTY0.13775E+03
+Viga  113 apoio sobre pilar   24 Leqv   .160 Lapo   .160 Capo   .350 Ang  90.00
+                                 KRX  .42242E+03         KRY .20213E+04
+                                 KTX 0.11875E+04         KTY0.24817E+03
+Viga  113 apoio sobre pilar   18 Leqv   .160 Lapo   .160 Capo   .500 Ang  90.00
+                                 KRX  .60345E+03         KRY .58931E+04
+                                 KTX 0.34621E+04         KTY0.35452E+03
+Viga  113 apoio sobre pilar   14 Leqv   .140 Lapo   .140 Capo   .450 Ang  90.00
+                                 KRX  .36384E+03         KRY .37591E+04
+                                 KTX 0.22084E+04         KTY0.21375E+03
+Viga  113 apoio sobre pilar   10 Leqv   .140 Lapo   .140 Capo   .450 Ang  90.00
+                                 KRX  .36384E+03         KRY .37591E+04
+                                 KTX 0.22084E+04         KTY0.21375E+03
+Viga  113 apoio sobre pilar    1 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .23447E+03         KRY .10061E+04
+                                 KTX 0.59107E+03         KTY0.13775E+03
+Viga  114 apoio sobre pilar   23 Leqv   .200 Lapo   .200 Capo   .200 Ang  90.00
+                                 KRX  .35785E+03         KRY .35785E+03
+                                 KTX 0.26838E+03         KTY0.26838E+03
+Viga  114 apoio sobre pilar   22 Leqv   .200 Lapo   .200 Capo   .200 Ang  90.00
+                                 KRX  .35785E+03         KRY .35785E+03
+                                 KTX 0.26838E+03         KTY0.26838E+03
+Viga  115 apoio sobre pilar    4 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .23447E+03         KRY .10061E+04
+                                 KTX 0.59107E+03         KTY0.13775E+03
+Viga  116 apoio sobre pilar   30 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .23447E+03         KRY .10061E+04
+                                 KTX 0.59107E+03         KTY0.13775E+03
+Viga  116 apoio sobre pilar   27 Leqv   .140 Lapo   .140 Capo   .450 Ang  90.00
+                                 KRX  .36384E+03         KRY .37591E+04
+                                 KTX 0.22084E+04         KTY0.21375E+03
+Viga  116 apoio sobre pilar   25 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .17797E+03         KRY .76366E+03
+                                 KTX 0.57274E+03         KTY0.13348E+03
+Viga  118 apoio sobre pilar    7 Leqv   .190 Lapo   .190 Capo   .190 Ang  90.00
+                                 KRX  .29147E+03         KRY .29147E+03
+                                 KTX 0.21860E+03         KTY0.21860E+03
+Viga  118 apoio sobre pilar    2 Leqv   .200 Lapo   .290 Capo   .140 Ang  90.00
+                                 KRX  .10061E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.59107E+03
+Viga  119 apoio sobre pilar   11 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .23447E+03         KRY .10061E+04
+                                 KTX 0.59107E+03         KTY0.13775E+03
+Viga  119 apoio sobre pilar    8 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .23447E+03         KRY .10061E+04
+                                 KTX 0.59107E+03         KTY0.13775E+03
+Viga  120 apoio sobre pilar   20 Leqv   .200 Lapo   .500 Capo   .160 Ang  90.00
+                                 KRX  .58931E+04         KRY .24138E+03
+                                 KTX 0.14181E+03         KTY0.34621E+04
+Viga  120 apoio sobre pilar   15 Leqv   .140 Lapo   .140 Capo   .450 Ang  90.00
+                                 KRX  .36384E+03         KRY .37591E+04
+                                 KTX 0.22084E+04         KTY0.21375E+03
+Viga  120 apoio sobre pilar   12 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .23447E+03         KRY .10061E+04
+                                 KTX 0.59107E+03         KTY0.13775E+03
+Viga  120 apoio sobre pilar    9 Leqv   .140 Lapo   .140 Capo   .290 Ang  90.00
+                                 KRX  .23447E+03         KRY .10061E+04
+                                 KTX 0.59107E+03         KTY0.13775E+03
+Viga  120 apoio sobre pilar    5 Leqv   .200 Lapo   .290 Capo   .140 Ang  90.00
+                                 KRX  .10061E+04         KRY .16171E+03
+                                 KTX 0.95001E+02         KTY0.59107E+03
+Viga  121 apoio sobre pilar   28 Leqv   .190 Lapo   .190 Capo   .190 Ang  90.00
+                                 KRX  .38400E+03         KRY .38400E+03
+                                 KTX 0.22559E+03         KTY0.22559E+03
+Viga  121 apoio sobre pilar   26 Leqv   .190 Lapo   .190 Capo   .190 Ang  90.00
+                                 KRX  .38400E+03         KRY .38400E+03
+                                 KTX 0.22559E+03         KTY0.22559E+03
+Viga  121 apoio sobre pilar   21 Leqv   .190 Lapo   .190 Capo   .190 Ang  90.00
+                                 KRX  .38400E+03         KRY .38400E+03
+                                 KTX 0.22559E+03         KTY0.22559E+03
+Viga  121 apoio sobre pilar   13 Leqv   .190 Lapo   .190 Capo   .190 Ang  90.00
+                                 KRX  .38400E+03         KRY .38400E+03
+                                 KTX 0.22559E+03         KTY0.22559E+03
+Viga  121 apoio sobre pilar    6 Leqv   .190 Lapo   .190 Capo   .190 Ang  90.00
+                                 KRX  .38400E+03         KRY .38400E+03
+                                 KTX 0.22559E+03         KTY0.22559E+03
+Viga  121 apoio sobre pilar    3 Leqv   .190 Lapo   .190 Capo   .190 Ang  90.00
+                                 KRX  .38400E+03         KRY .38400E+03
+                                 KTX 0.22559E+03         KTY0.22559E+03
+
+
+
+Modelo da forma:
+
+Nós ...................................  134
+Vigas .................................   22
+Pilares ...............................   29
+Lajes .................................    0
+
+Modelo da grelha:
+
+Nós ...................................  107
+Materiais .............................    2
+Seções ................................    3
+Barras ................................   84
+Restrições ............................   67
+
+Caso de carregamento ..................    1
+===>>> Todas permanentes e acidentais dos pavimentos                           
+Forças nos nós ........................   26
+Carregamentos nas barras ..............  110
+Somatória de cargas verticais.(nos)....      2.97 tf
+Somatória de cargas verticais.(barras).     63.54 tf (só vigas)
+
+Caso de carregamento ..................    2
+===>>> Peso Próprio                                                            
+Carregamentos nas barras ..............   56
+Somatória de cargas verticais.(barras).     18.73 tf (só vigas)
+
+Caso de carregamento ..................    3
+===>>> Cargas permanentes                                                      
+Forças nos nós ........................   26
+Carregamentos nas barras ..............   56
+Somatória de cargas verticais.(nos)....      2.95 tf
+Somatória de cargas verticais.(barras).     43.71 tf (só vigas)
+
+Caso de carregamento ..................    4
+===>>> Cargas acidentais                                                       
+Forças nos nós ........................    4
+Carregamentos nas barras ..............    6
+Somatória de cargas verticais.(nos)....      0.02 tf
+Somatória de cargas verticais.(barras).      1.10 tf (só vigas)
+
+Largura de banda original .............   63
+Largura de banda reduzida .............    6
+
+
+
+AVISO: nervuras não processadas no projeto    3 
